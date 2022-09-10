@@ -2,26 +2,68 @@ body{
 	background-color: #F9F7F7;
 	margin: 0;
 	padding: 0;
+	color: black;
 }
-#navbar{
+.dark-mode{
+	background-color: black;
+	color: white;
+}
+h1{
+	font-family: 'Bebas Neue', cursive; 
+	font-size: 60px;
+	text-align: center; 
+	
+}
+#dark{
+	position: fixed; 
+  	bottom: 20px; 
+  	right: 30px; 
+  	z-index: 99;  
+	width: 20px;
+	height: 20px;  
+	background-color: #3F72AF;
+	padding: 10px;
+	border-radius: 50%;
+}
+.sidenavbar{
+	height:100%;
+	width: 0%;
+	z-index: 1;
 	background-color: #112D4E;
-	font-family: 'Bebas Neue', cursive;
-	font-size: 30px;
 	position: fixed;
-	top: -70px;
-	transition: top 0.3s;
-	width: 100%;	
+	top: 0;
+	left: 0;
+	transition:0.5s;
+	overflow-x: hidden;
+	padding-top: 60px;
 }
-#navbar a{
-	float: left;
+.sidenavbar a{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
 	display: block;
 	color: #F9F7F7;
-	text-align: center;
-	padding: 15px;
+	padding: 8px 8px 8px 32px;
 	text-decoration: none;
+	transition: 0.3s;
 }
-#navbar a:hover{
+.sidenavbar a:hover{
 	background-color: #3F72AF;
+}
+.sidenavbar .closebtn{
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 25px;
+	margin-left: 50px;
+	padding: 10px;
+}
+#main{
+	transition: margin-left .5s;
+	padding: 20px;
+}
+@media screen and (max-height: 450px){
+	.sidenavbar {padding-top: 15px;}
+	.sidenavbar a{font-size: 18px;}
 }
 .logo{
 	text-align: center;
@@ -80,6 +122,27 @@ li a:hover{
 	background-color: #9ED2C6;
 }
 */
+header{
+	background-color: #112D4E;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	display: block;
+	color: #F9F7F7;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	top: 0;
+	position: fixed;
+	width: 100%;
+}
+header a{
+	background-color: #112D4E;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 25px;
+	display: inline;	
+	color: #F9F7F7;
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+}
 hr{
 	border-style: none;
   	border-top-style: dotted;
@@ -93,13 +156,20 @@ section{
 	font-family: 'Bebas Neue', cursive;
 	font-size: 30px;
 	text-align: center;
+	margin: 50px;
+	padding-left: 80px;
+	padding-right: 80px;
+}
+@media screen and (max-height: 1000px){
+	section {width: fit-content;}
 }
 footer{
 	background-color: #3F72AF;
 	color: #F9F7F7;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 30px;
-	text-align: center;
-	
-	
+	text-align: center;	
+}
+span{
+	font-family: 'Bebas Neue', cursive;
 }
