@@ -34,15 +34,17 @@
 	</div>
 	<br id="go"><br><br><br><br><br><br><br><br>
 	<div id="main">
-		<div class="logo">
-			<img src="Images/sssihl-modified.png" width="140" height="140">
-		</div>
-		<div class="intro">
-			<h1 style="margin-bottom: 0;">SSSIHL MDH CAMPUS</h1>
-		</div>
-		<div class="contd">
-			<p style="margin-top: 0; margin-bottom: 0;">Student & Faculty Database</p>
-			<p style="margin-top: 0;font-size: 25px;"> by Vidyasager GR & Sairaj Patro</p>
+		<div class="home-container">
+			<div class="logo">
+				<img src="Images/sssihl-modified.png" width="140" height="140">
+			</div>
+			<div class="intro">
+				<h1 style="margin-bottom: 0;">SSSIHL MDH CAMPUS</h1>
+			</div>
+			<div class="contd">
+				<p style="margin-top: 0; margin-bottom: 0;">Student & Faculty Database</p>
+				<p style="margin-top: 0;font-size: 25px;"> by Vidyasager GR & Sairaj Patro</p>
+			</div>
 		</div>
 		<br id="lo"><br>
 		<hr>
@@ -51,14 +53,14 @@
 		<center>
 			<section id="login">
 				<h2 style="font-family: 'Dancing Script', cursive; padding: 5px;">Welcome!</h2>
-				<form>
+				<form method="post">
 					<label for="uname">Username</label><br>
-					<input type="text" id="uname" name="uname"><br>
+					<input type="text" placeholder="Enter Username" name="uname" required><br>
 					<label for="pwd">Password</label><br>
-					<input type="password" id="pwd" name="pwd"><br>
-					<button type="button" onclick="alert('It works!!')">Login</button>
+					<input type="password" placeholder="Enter Password" name="pwd" required><br>
+					<input type="button" onclick="alert('It works!!')" value="Login">
 					<br>
-					<a onclick="alert('Jai Sairam')" style="font-size: 20px;">Forgot Password?</a>
+					<a onclick="alert('Jai Sairam')" style="font-size: 20px; cursor: pointer;">Forgot Password?</a>
 				</form> 
 			</section>
 		 </center>
