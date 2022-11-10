@@ -12,6 +12,10 @@ app.get("/login", function(req, res){
 	res.sendFile(__dirname + "/login.html");
 });
 
+app.get("/signup", function(req, res){
+	res.sendFile(__dirname + "/signup.html");
+});
+
 app.post("/", function(req, res){
 	var uname = req.body.uname;
 	var pwd = req.body.pwd;
